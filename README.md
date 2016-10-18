@@ -26,9 +26,9 @@
 ![](http://oe51jhwvd.bkt.clouddn.com/hecha-machine.jpg)
 
 ### 6、详情页面 ###
-#### 主要显示商品的详细信息，[查看详情页面](查看[活动页面](http://www.takozhang.cn/touch-hecha/detail.html?010101)) ####
+#### 主要显示商品的详细信息，[查看详情页面](http://www.takozhang.cn/touch-hecha/detail.html?010101)####
 ![](http://oe51jhwvd.bkt.clouddn.com/hecha-detail.jpg)
 
 ### 7、购物车页面 ###
-#### 主要显示购物车的详细信息，[查看购物车页面](查看[购物车页面](http://www.takozhang.cn/touch-hecha/shoppingCart.html))  ####
+#### 主要显示购物车的详细信息，[查看购物车页面](http://www.takozhang.cn/touch-hecha/shoppingCart.html)  ####
 ![](http://oe51jhwvd.bkt.clouddn.com/hecha-shoppingCart.jpg)
