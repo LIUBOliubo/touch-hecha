@@ -655,12 +655,12 @@ a {
 @font-face {
   font-family: 'iconfont';
   /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  src: url("/build/images/fonts/iconfont-footer.woff") format("woff"), url("/build/images/fonts/iconfont-footer.ttf") format("truetype"); }
+  src: url("/touch-hecha/images/fonts/iconfont-footer.woff") format("woff"), url("/touch-hecha/images/fonts/iconfont-footer.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'iconfont';
   /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  src: url("/build/images/fonts/index-header.woff") format("woff"), url("/build/images/fonts/index-header.ttf") format("truetype"); }
+  src: url("/touch-hecha/images/fonts/index-header.woff") format("woff"), url("/touch-hecha/images/fonts/index-header.ttf") format("truetype"); }
 
 .iconfont {
   font-family: iconfont; }
