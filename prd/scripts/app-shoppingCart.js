@@ -287,7 +287,7 @@
 		});
 
 		/*
-		This should find all Android browsers lower than build 535.19 (both stock browser and webview)
+		This should find all Android browsers lower than touch-hecha 535.19 (both stock browser and webview)
 		- galaxy S2 is ok
 	    - 2.3.6 : `AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1`
 	    - 4.0.4 : `AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30`
@@ -1794,7 +1794,7 @@
 				if ( now >= destTime ) {
 					that.isAnimating = false;
 					that._translate(destX, destY);
-					
+
 					if ( !that.resetPosition(that.options.bounceTime) ) {
 						that._execEvent('scrollEnd');
 					}
@@ -2420,19 +2420,19 @@
 	//选择所有商品
 	$('.footerLeft img:first-child').on('tap', function() {
 	    changeWxz($(this));
-	    if ($(this).attr('src') == '/build/images/wxzno.png') {
-	        $('.liLeft img:first-child').attr('src', '/build/images/wxzno.png');
+	    if ($(this).attr('src') == '/touch-hecha/images/wxzno.png') {
+	        $('.liLeft img:first-child').attr('src', '/touch-hecha/images/wxzno.png');
 	    } else {
-	        $('.liLeft img:first-child').attr('src', '/build/images/wxz.png');
+	        $('.liLeft img:first-child').attr('src', '/touch-hecha/images/wxz.png');
 	    }
 	    allPrice();
 	})
 
 	function changeWxz($ele) {
-	    if ($ele.attr('src') == '/build/images/wxzno.png') {
-	        $ele.attr('src', '/build/images/wxz.png');
+	    if ($ele.attr('src') == '/touch-hecha/images/wxzno.png') {
+	        $ele.attr('src', '/touch-hecha/images/wxz.png');
 	    } else {
-	        $ele.attr('src', '/build/images/wxzno.png');
+	        $ele.attr('src', '/touch-hecha/images/wxzno.png');
 	    }
 	}
 
@@ -2493,7 +2493,7 @@
 	function allPrice() {
 	    var allCount = 0;
 	    $('#index-scroll li').each(function() {
-	        if ($(this).children('.liLeft').children('img').first().attr('src') == '/build/images/wxzno.png') {
+	        if ($(this).children('.liLeft').children('img').first().attr('src') == '/touch-hecha/images/wxzno.png') {
 	            var num = parseInt($(this).children('.liMiddle').find('input').val());
 	            var price = parseInt($(this).children('.liRight').find('i').html());
 	            allCount += num * price;
@@ -2508,7 +2508,7 @@
 /* 16 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"container\">    <header>        <div class=\"headerLeft\"><a href=\"/build/index.html\"><img src=\"/build/images/back.png\" alt=\"\"></a></div>        <p>购物车</p>        <div class=\"headerRight\">编辑</div>    </header>    <section id=\"index-scroll\">        <script id=\"list\" type=\"text/html\">            <ul id=\"loadUl\">                {{each data as value i}}                <li>                  <span>{{value.ProductId}}</span>                  <div class=\"liLeft\">                    <img src=\"/build/images/wxz.png\">                    <span></span>                    <img src={{value.ProductImage}}>                  </div>                  <div class=\"liMiddle\">                    <p>{{value.ProductName}}</p>                    <h2><i>数量:</i><span class=\"sub\">-</span><input type=\"text\" value={{value.ProductSaleCount}}><span class=\"add\">+</span></h2>                  </div>                  <div class=\"liRight\">                    <p><span>￥</span><i>{{value.ProductSalePrice}}</i></p>                    <h2>删除商品</h2>                  </div>                </li>                {{/each}}            </ul>        </script>    </section>    <footer>        <div class=\"footerLeft\">            <img src=\"/build/images/wxz.png\">            <span>全选</span>        </div>        <div class=\"footerRight\">            <span>商品</span>            <i>￥<b>0.00</b></i>            <p>结算</p>        </div>    </footer></div>"
+	module.exports = "<div class=\"container\">    <header>        <div class=\"headerLeft\"><a href=\"/touch-hecha/index.html\"><img src=\"/touch-hecha/images/back.png\" alt=\"\"></a></div>        <p>购物车</p>        <div class=\"headerRight\">编辑</div>    </header>    <section id=\"index-scroll\">        <script id=\"list\" type=\"text/html\">            <ul id=\"loadUl\">                {{each data as value i}}                <li>                  <span>{{value.ProductId}}</span>                  <div class=\"liLeft\">                    <img src=\"/touch-hecha/images/wxz.png\">                    <span></span>                    <img src={{value.ProductImage}}>                  </div>                  <div class=\"liMiddle\">                    <p>{{value.ProductName}}</p>                    <h2><i>数量:</i><span class=\"sub\">-</span><input type=\"text\" value={{value.ProductSaleCount}}><span class=\"add\">+</span></h2>                  </div>                  <div class=\"liRight\">                    <p><span>￥</span><i>{{value.ProductSalePrice}}</i></p>                    <h2>删除商品</h2>                  </div>                </li>                {{/each}}            </ul>        </script>    </section>    <footer>        <div class=\"footerLeft\">            <img src=\"/touch-hecha/images/wxz.png\">            <span>全选</span>        </div>        <div class=\"footerRight\">            <span>商品</span>            <i>￥<b>0.00</b></i>            <p>结算</p>        </div>    </footer></div>"
 
 /***/ },
 /* 17 */

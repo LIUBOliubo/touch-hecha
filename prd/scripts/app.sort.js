@@ -53,7 +53,7 @@
 /***/ 4:
 /***/ function(module, exports) {
 
-	module.exports = "<footer id=\"footer\">    <ul>        <li  data-url=\"/build/my.html\">            <i class=\"iconfont\">&#xe61a;</i>            <b>我的</b>        </li>        <li data-url=\"/build/sortMenu.html\">            <i class=\"iconfont dd\" >&#xe602;</i>            <b>分类</b>        </li>        <li class=\"active\" data-url=\"/build/index.html\">            <i class=\"iconfont\">&#xe613;</i>            <b>主页</b>        </li>        <li data-url=\"/build/activity.html\">            <i class=\"iconfont\">&#xe61b;</i>            <b>活动</b>        </li>      <li data-url=\"/build/machine.html\">            <i class=\"iconfont\">&#x353e;</i>            <b>茶饮机</b>        </li>    </ul></footer>"
+	module.exports = "<footer id=\"footer\">    <ul>        <li  data-url=\"/touch-hecha/my.html\">            <i class=\"iconfont\">&#xe61a;</i>            <b>我的</b>        </li>        <li data-url=\"/touch-hecha/sortMenu.html\">            <i class=\"iconfont dd\" >&#xe602;</i>            <b>分类</b>        </li>        <li class=\"active\" data-url=\"/touch-hecha/index.html\">            <i class=\"iconfont\">&#xe613;</i>            <b>主页</b>        </li>        <li data-url=\"/touch-hecha/activity.html\">            <i class=\"iconfont\">&#xe61b;</i>            <b>活动</b>        </li>      <li data-url=\"/touch-hecha/machine.html\">            <i class=\"iconfont\">&#x353e;</i>            <b>茶饮机</b>        </li>    </ul></footer>"
 
 /***/ },
 
@@ -220,7 +220,7 @@
 	var temp=-1;
 	var newDataJson;
 	$.ajax({
-	  url: '/build/mock/sortMenu.json',
+	  url: '/touch-hecha/mock/sortMenu.json',
 	  success: function (res) {
 	    var html = template('listMenu', res.data[sortNum].name);
 	    common.inner($('#menu'),html);
@@ -230,7 +230,7 @@
 	});
 	$.ajax({
 	  //url: '/api/sort'+sortNum+'.php',
-	  url:'/build/mock/sort'+sortNum+'.json',
+	  url:'/touch-hecha/mock/sort'+sortNum+'.json',
 	  success: function (res) {
 	    dataJson=res;
 	    newDataJson=dataJson;
@@ -356,7 +356,7 @@
 /***/ 23:
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"container\">  <header>    <ul>      <li>        <a href=\"sortMenu.html\"><img src=\"/build/images/sort.images/back.png\" alt=\"返回\"></a>      </li>      <li id=\"menu\">        <script id=\"listMenu\" type=\"text/html\">          {{each data as value}}          {{/each}}        </script>      </li>      <li class=\"headerRight\">        <a href=\"shoppingCart.html\" class=\"iconfont\">&#xe66c;</a>      </li>    </ul>  </header>  <nav>    <ul id=\"choose\">      <li class=\"active\">选择分类      </li>      <li>选择排序</li>    </ul>    <ul id=\"fenlei\">      <script id=\"listFenlei\" type=\"text/html\">        {{each data as value}}          <li>{{value}}</li>        {{/each}}      </script>    </ul>    <ul id=\"paixu\">      <li>销量（高到低）</li>      <li>销量（低到高）</li>      <li>价格（高到低）</li>      <li>价格（低到高）</li>    </ul>  </nav>  <section id=\"index-scroll\">    <script id=\"list\" type=\"text/html\">      <ul>        {{each data as value}}        <li data-url=\"detail.html?{{value.ProductId}}\">          <div class=\"goodLeft\">            <img src={{value.ProductImage}} alt=\"\">          </div>          <div class=\"goodRight\">            <p class=\"goodName\">{{value.ProductName}}</p>            <p class=\"goodPrice\">              ￥<span class=\"nowPrice\">{{value.ProductSalePrice}}</span>              <del>市场价:￥<span class=\"oldPrice\">{{value.ProductMarketPrice}}</span></del>            </p>            <p class=\"pingjia\">评价&nbsp;&nbsp;{{value.ProductComment}}</p>          </div>        </li>        {{/each}}      </ul>    </script>  </section></div>"
+	module.exports = "<div class=\"container\">  <header>    <ul>      <li>        <a href=\"sortMenu.html\"><img src=\"/touch-hecha/images/sort.images/back.png\" alt=\"返回\"></a>      </li>      <li id=\"menu\">        <script id=\"listMenu\" type=\"text/html\">          {{each data as value}}          {{/each}}        </script>      </li>      <li class=\"headerRight\">        <a href=\"shoppingCart.html\" class=\"iconfont\">&#xe66c;</a>      </li>    </ul>  </header>  <nav>    <ul id=\"choose\">      <li class=\"active\">选择分类      </li>      <li>选择排序</li>    </ul>    <ul id=\"fenlei\">      <script id=\"listFenlei\" type=\"text/html\">        {{each data as value}}          <li>{{value}}</li>        {{/each}}      </script>    </ul>    <ul id=\"paixu\">      <li>销量（高到低）</li>      <li>销量（低到高）</li>      <li>价格（高到低）</li>      <li>价格（低到高）</li>    </ul>  </nav>  <section id=\"index-scroll\">    <script id=\"list\" type=\"text/html\">      <ul>        {{each data as value}}        <li data-url=\"detail.html?{{value.ProductId}}\">          <div class=\"goodLeft\">            <img src={{value.ProductImage}} alt=\"\">          </div>          <div class=\"goodRight\">            <p class=\"goodName\">{{value.ProductName}}</p>            <p class=\"goodPrice\">              ￥<span class=\"nowPrice\">{{value.ProductSalePrice}}</span>              <del>市场价:￥<span class=\"oldPrice\">{{value.ProductMarketPrice}}</span></del>            </p>            <p class=\"pingjia\">评价&nbsp;&nbsp;{{value.ProductComment}}</p>          </div>        </li>        {{/each}}      </ul>    </script>  </section></div>"
 
 /***/ }
 

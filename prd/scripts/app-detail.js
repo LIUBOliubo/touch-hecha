@@ -280,12 +280,12 @@
 
 	//点击立即购买跳到购物车
 	$('body').on('tap', '.footerRight p:last-child', function() {
-	    window.location.href = '/build/shoppingCart.html';
+	    window.location.href = '/touch-hecha/shoppingCart.html';
 	});
 
 	//便利detail.json文件找到id=str的商品信息
 	$.ajax({
-	    url: '/build/mock/detail.json',
+	    url: '/touch-hecha/mock/detail.json',
 	    dataType: 'json',
 	    success: function(obj) {
 	        var objJson=obj[1];
@@ -314,7 +314,7 @@
 	for (var i = 1; i <= 2; i++) {
 	    $.ajax({
 	        //url: "/api/sort" + i + ".php",
-	        url:"/build/mock/sort"+i+".json",
+	        url:"/touch-hecha/mock/sort"+i+".json",
 	        dataType: 'json',
 	        success: function(obj) {
 	          var arr = obj.data;
@@ -338,7 +338,7 @@
 	function addLocalStorary(id) {
 	    for (var i = 1; i <= 2; i++) {
 	        $.ajax({
-	            url: "/build/mock/sort"+i+".json",
+	            url: "/touch-hecha/mock/sort"+i+".json",
 	            dataType: 'json',
 	            success: function(obj) {
 	                var arr = obj.data;
@@ -363,7 +363,7 @@
 	                        break;
 	                    }
 	                }
-			  var len; 
+			  var len;
 	                var arr2=changeLostarage(1, 'shoppingCart', 'json');
 			    if(arr2==null){ len=0;}
 	                 else{len=arr2.length;}
@@ -475,7 +475,7 @@
 		});
 
 		/*
-		This should find all Android browsers lower than build 535.19 (both stock browser and webview)
+		This should find all Android browsers lower than touch-hecha 535.19 (both stock browser and webview)
 		- galaxy S2 is ok
 	    - 2.3.6 : `AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1`
 	    - 4.0.4 : `AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30`
@@ -1982,7 +1982,7 @@
 				if ( now >= destTime ) {
 					that.isAnimating = false;
 					that._translate(destX, destY);
-					
+
 					if ( !that.resetPosition(that.options.bounceTime) ) {
 						that._execEvent('scrollEnd');
 					}
@@ -2537,7 +2537,7 @@
 /* 10 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"container\">    <div class=\"bdsharebuttonbox\">        <a href=\"#\" class=\"bds_more\" data-cmd=\"more\"></a>        <a href=\"#\" class=\"bds_qzone\" data-cmd=\"qzone\" title=\"分享到QQ空间\"></a>        <a href=\"#\" class=\"bds_tsina\" data-cmd=\"tsina\" title=\"分享到新浪微博\"></a>        <a href=\"#\" class=\"bds_tqq\" data-cmd=\"tqq\" title=\"分享到腾讯微博\"></a>        <a href=\"#\" class=\"bds_renren\" data-cmd=\"renren\" title=\"分享到人人网\"></a>        <a href=\"#\" class=\"bds_weixin\" data-cmd=\"weixin\" title=\"分享到微信\"></a>    </div>    <header>        <div class=\"headerLeft\">            <a href=\"/build/index.html\"><img src=\"/build/images/back.png\" alt=\"\"></a>        </div>        <p>商品信息</p>        <div class=\"headerRight\">            <a href=\"/build/shoppingCart.html\"><h2></h2><img src=\"http://m.hecha.cn/img/order/car-bai.png\" alt=\"\"></a>        </div>    </header>    <section id=\"index-scroll\">        <div class=\"allSection\">            <div class=\"swiper-container\">                <div class=\"swiper-wrapper\">                    <!-- <div class=\"swiper-slide\"><img src=\"http://img1.hecha.cn/ProductImage/20160705/20160705111340349_m.jpg\" alt=\"\"></div>                    <div class=\"swiper-slide\"><img src=\"http://img1.hecha.cn/ProductImage/20160705/20160705111640239_m.jpg\" alt=\"\"></div>                    <div class=\"swiper-slide\"><img src=\"http://img1.hecha.cn/ProductImage/20160705/20160705111740646_m.jpg\" alt=\"\"></div>                    <div class=\"swiper-slide\"><img src=\"http://img1.hecha.cn/ProductImage/20160705/20160705111840661_m.jpg\" alt=\"\"></div>                    <div class=\"swiper-slide\"><img src=\"http://img1.hecha.cn/ProductImage/20160705/20160705111940630_m.jpg\" alt=\"\"></div> -->                </div>            </div>            <p class=\"goodName\">但是客服会死殴打后我广发破发泡藕【大风歌爱的佛国考订房</p>            <h2><span>￥</span><i>192</i>&nbsp;&nbsp;&nbsp;<b>市场价&nbsp;:&nbsp;</b>￥<s>228.00</s></h2>            <h3>客户评分&nbsp;:&nbsp;<span>非常满意</span></h3>            <div class=\"goodArgu\">                商品参数                <div class=\"goodDetail\">                    <ul>                        <li>                            <p class=\"p1\">品牌商家&nbsp;：&nbsp;凤凰山</p>                            <p class=\"p2\">产地&nbsp;：&nbsp;福建省泉州市</p>                        </li>                        <li>                            <p class=\"p1\">等级&nbsp;：&nbsp;特技</p>                            <p class=\"p2\">保质期&nbsp;：&nbsp;18个月</p>                        </li>                        <li>                            <p class=\"p1\">货号&nbsp;：&nbsp;FCS-14021</p>                            <p class=\"p2\">产品规格&nbsp;：&nbsp;25g/罐</p>                        </li>                        <li>存储方式&nbsp;:&nbsp;避光，防潮，防异味</li>                    </ul>                </div>            </div>            <!-- <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826091656616_m.jpg\" class=\"img_1\">            <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826091656787_m.jpg\" class=\"img_2\">            <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826091756428_m.jpg\" class=\"img_3\">            <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826091756616_m.jpg\" class=\"img_4\">            <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826091756772_m.jpg\" class=\"img_5\">            <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826091856162_m.jpg\" class=\"img_6\">            <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826091856569_m.jpg\" class=\"img_7\">            <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826092056897_m.jpg\" class=\"img_8\">            <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826092156131_m.jpg\" class=\"img_9\">            <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826092156334_m.jpg\" class=\"img_10\">            <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826092156678_m.jpg\" class=\"img_11\">            <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826092156866_m.jpg\" class=\"img_12\">            <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826092256522_m.jpg\" class=\"img_13\" alt=\"\"> -->        </div>    </section>    <footer>        <div class=\"footerLeft\">            <img src=\"/build/images/ren.png\" alt=\"\">            <img src=\"/build/images/weishoucang.png\" alt=\"\">        </div>        <div class=\"footerRight\">            <p>加入购物车</p>            <p>立即购买</p>        </div>    </footer>    <p class=\"addCart\">加入购物车成功</p></div>"
+	module.exports = "<div class=\"container\">    <div class=\"bdsharebuttonbox\">        <a href=\"#\" class=\"bds_more\" data-cmd=\"more\"></a>        <a href=\"#\" class=\"bds_qzone\" data-cmd=\"qzone\" title=\"分享到QQ空间\"></a>        <a href=\"#\" class=\"bds_tsina\" data-cmd=\"tsina\" title=\"分享到新浪微博\"></a>        <a href=\"#\" class=\"bds_tqq\" data-cmd=\"tqq\" title=\"分享到腾讯微博\"></a>        <a href=\"#\" class=\"bds_renren\" data-cmd=\"renren\" title=\"分享到人人网\"></a>        <a href=\"#\" class=\"bds_weixin\" data-cmd=\"weixin\" title=\"分享到微信\"></a>    </div>    <header>        <div class=\"headerLeft\">            <a href=\"/touch-hecha/index.html\"><img src=\"/touch-hecha/images/back.png\" alt=\"\"></a>        </div>        <p>商品信息</p>        <div class=\"headerRight\">            <a href=\"/touch-hecha/shoppingCart.html\"><h2></h2><img src=\"http://m.hecha.cn/img/order/car-bai.png\" alt=\"\"></a>        </div>    </header>    <section id=\"index-scroll\">        <div class=\"allSection\">            <div class=\"swiper-container\">                <div class=\"swiper-wrapper\">                    <!-- <div class=\"swiper-slide\"><img src=\"http://img1.hecha.cn/ProductImage/20160705/20160705111340349_m.jpg\" alt=\"\"></div>                    <div class=\"swiper-slide\"><img src=\"http://img1.hecha.cn/ProductImage/20160705/20160705111640239_m.jpg\" alt=\"\"></div>                    <div class=\"swiper-slide\"><img src=\"http://img1.hecha.cn/ProductImage/20160705/20160705111740646_m.jpg\" alt=\"\"></div>                    <div class=\"swiper-slide\"><img src=\"http://img1.hecha.cn/ProductImage/20160705/20160705111840661_m.jpg\" alt=\"\"></div>                    <div class=\"swiper-slide\"><img src=\"http://img1.hecha.cn/ProductImage/20160705/20160705111940630_m.jpg\" alt=\"\"></div> -->                </div>            </div>            <p class=\"goodName\">但是客服会死殴打后我广发破发泡藕【大风歌爱的佛国考订房</p>            <h2><span>￥</span><i>192</i>&nbsp;&nbsp;&nbsp;<b>市场价&nbsp;:&nbsp;</b>￥<s>228.00</s></h2>            <h3>客户评分&nbsp;:&nbsp;<span>非常满意</span></h3>            <div class=\"goodArgu\">                商品参数                <div class=\"goodDetail\">                    <ul>                        <li>                            <p class=\"p1\">品牌商家&nbsp;：&nbsp;凤凰山</p>                            <p class=\"p2\">产地&nbsp;：&nbsp;福建省泉州市</p>                        </li>                        <li>                            <p class=\"p1\">等级&nbsp;：&nbsp;特技</p>                            <p class=\"p2\">保质期&nbsp;：&nbsp;18个月</p>                        </li>                        <li>                            <p class=\"p1\">货号&nbsp;：&nbsp;FCS-14021</p>                            <p class=\"p2\">产品规格&nbsp;：&nbsp;25g/罐</p>                        </li>                        <li>存储方式&nbsp;:&nbsp;避光，防潮，防异味</li>                    </ul>                </div>            </div>            <!-- <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826091656616_m.jpg\" class=\"img_1\">            <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826091656787_m.jpg\" class=\"img_2\">            <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826091756428_m.jpg\" class=\"img_3\">            <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826091756616_m.jpg\" class=\"img_4\">            <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826091756772_m.jpg\" class=\"img_5\">            <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826091856162_m.jpg\" class=\"img_6\">            <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826091856569_m.jpg\" class=\"img_7\">            <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826092056897_m.jpg\" class=\"img_8\">            <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826092156131_m.jpg\" class=\"img_9\">            <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826092156334_m.jpg\" class=\"img_10\">            <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826092156678_m.jpg\" class=\"img_11\">            <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826092156866_m.jpg\" class=\"img_12\">            <img src=\"http://img1.hecha.cn/ProductMemo/20160826/20160826092256522_m.jpg\" class=\"img_13\" alt=\"\"> -->        </div>    </section>    <footer>        <div class=\"footerLeft\">            <img src=\"/touch-hecha/images/ren.png\" alt=\"\">            <img src=\"/touch-hecha/images/weishoucang.png\" alt=\"\">        </div>        <div class=\"footerRight\">            <p>加入购物车</p>            <p>立即购买</p>        </div>    </footer>    <p class=\"addCart\">加入购物车成功</p></div>"
 
 /***/ }
 /******/ ]);

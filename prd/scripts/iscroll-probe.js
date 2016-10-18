@@ -91,7 +91,7 @@ var utils = (function () {
 	});
 
 	/*
-	This should find all Android browsers lower than build 535.19 (both stock browser and webview)
+	This should find all Android browsers lower than touch-hecha 535.19 (both stock browser and webview)
 	- galaxy S2 is ok
     - 2.3.6 : `AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1`
     - 4.0.4 : `AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30`
@@ -1598,7 +1598,7 @@ IScroll.prototype = {
 			if ( now >= destTime ) {
 				that.isAnimating = false;
 				that._translate(destX, destY);
-				
+
 				if ( !that.resetPosition(that.options.bounceTime) ) {
 					that._execEvent('scrollEnd');
 				}
